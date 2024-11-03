@@ -107,8 +107,6 @@ const Resume: React.FC = () => {
         </section>
       </div>
     </div>
-
-    export default Resume;
     </section>
   );
 };
