@@ -3,9 +3,8 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <a href="https://github.com/your-profile">GitHub</a>
-      <a href="https://linkedin.com/in/your-profile">LinkedIn</a>
-      <a href="https://stackoverflow.com/users/your-profile">Stack Overflow</a>
+      <a href="https://github.com/AttackOnBaron-BC">GitHub</a>
+      <a href="https://www.linkedin.com/in/jhe2019/">LinkedIn</a>
     </footer>
   );
 };
