@@ -48,6 +48,7 @@ const Contact: React.FC = () => {
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
+      <p>Contact: hezuole@gmail.com</p>
     </section>
   );
 };
