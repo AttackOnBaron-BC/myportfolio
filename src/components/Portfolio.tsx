@@ -13,6 +13,16 @@ const Portfolio: React.FC = () => {
           <a href="link-to-github-repo">GitHub Repo</a>
         </div>
       </div>
+
+      <div className="portfolio-items">
+        {/* Repeat for each project */}
+        <div className="portfolio-item">
+          <img src="path/to/project-image.jpg" alt="Project Title" />
+          <h3>Project Title</h3>
+          <a href="link-to-deployed-app">Deployed App</a>
+          <a href="link-to-github-repo">GitHub Repo</a>
+        </div>
+      </div>
     </section>
   );
 };
