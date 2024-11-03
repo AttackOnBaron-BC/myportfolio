@@ -1,20 +1,24 @@
-import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { FC } from 'react';
+import { HeaderProps, SectionType } from '../types';
 
-const Header: React.FC = () => {
+const Header: FC<HeaderProps> = ({ currentSection, setCurrentSection }) => {
+  const sections: SectionType[] = ['About Me', 'Portfolio', 'Contact', 'Resume'];
+
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="#home">Your Name</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link href="#about">About Me</Nav.Link>
-          <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
-          <Nav.Link href="#resume">Resume</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <header>
+      <h1>Attack on Baron</h1>
+      <nav>
+        {sections.map((section) => (
+          <button
+            key={section}
+            onClick={() => setCurrentSection(section)}
+            className={currentSection === section ? 'active' : ''}
+          >
+            {section}
+          </button>
+        ))}
+      </nav>
+    </header>
   );
 };
 
