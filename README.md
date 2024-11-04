@@ -67,7 +67,7 @@ npm run dev
 - TypeScript
 - Vite
 - React Router
-- Tailwind CSS
+- Bootstrap
 - Email.js (for contact form)
 - Netlify (deployment)
 
